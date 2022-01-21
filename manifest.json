@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "SFW-Reddit",
+  "version": "0.1",
+
+  "description": "Hides nsfw posts on reddit and redirects nsfw subreddits.",
+
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "js": ["sfwreddit.js"]
+    }
+  ]
+
+}
